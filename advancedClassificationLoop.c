@@ -29,9 +29,9 @@ int isArmstrong(int n)
     }
     if (sum == n)
     {
-        return 1;
+        return TRUE;
     }
-    return 0;
+    return FALSE;
 }
 
 int isPalindrome(int n)
@@ -46,7 +46,7 @@ int isPalindrome(int n)
         n = n / 10;
     }
     if (temp == sum)
-        return 1;
+        return TRUE;
     else
-        return 0;
+        return FALSE;
 }

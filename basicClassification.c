@@ -9,12 +9,12 @@ int isPrime(int x)
 {
 	if (x == 1)
 	{
-		return 1;
+		return TRUE;
 	}
 
 	if (x <= 0)
 	{
-		return 0;
+		return FALSE;
 	}
 
 	for (int i = 2; i <= sqrt(x); i++)
@@ -55,7 +55,7 @@ int isStrong(int x)
 	}
 	if (sum == x)
 	{
-		return 1;
+		return TRUE;
 	}
-	return 0;
+	return FALSE;
 }
