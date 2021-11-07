@@ -32,18 +32,32 @@ int isArmstrong(int n) {
     return 0;
 }
 
-int isPalindrome(int n) {
-    if (n < 10) {
+int isPalindrome(int num)
+{
+    /* 
+     * Check if the given number is equal to 
+     * its reverse.
+     */
+    if(num == reverse(num))
+    {
         return 1;
     }
-    int len = 0;
-    int temp = n;
-    while(temp != 0) {
-        len++;
-        temp = temp/10;
-    }
-    if ((int) (n/pow(10,len-1)) != (n%10)) {
+    
+    return 0;
+}
+
+
+/**
+ * Recursive function to find reverse of any number
+ */
+int reverse(int num)
+{
+    /* Find number of digits in num */
+    int digit = (int)log10(num);
+    
+    /* Recursion base condition */
+    if(num == 0)
         return 0;
-    }
-    return isPalindrome((n%(int)pow(10,len-1))/10);
+
+    return ((num%10 * pow(10, digit)) + reverse(num/10));
 }
