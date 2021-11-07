@@ -4,7 +4,7 @@
 
 int main() {
     int a, b;
-  //  printf("please enter the First and the Second numbers: ");
+	printf("please enter the First and the Second numbers: ");
     scanf("%d", &a);
 	scanf("%d", &b);
 	if (b < a)
