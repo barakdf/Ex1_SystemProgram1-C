@@ -4,7 +4,7 @@
 
 int main() {
     int a, b;
-    printf("please enter the First and the Second numbers: ");
+  //  printf("please enter the First and the Second numbers: ");
     scanf("%d", &a);
 	scanf("%d", &b);
 	if (b < a)
@@ -32,7 +32,7 @@ int main() {
 	printf("\n");
     printf("The Prime numbers are:");
 	for(int i = a; i <= b ; i++){
-	    if (isPrime(i) == TRUE)
+	    if (isPrime(i) == 1)
 	    	{
 	    		printf(" %d", i);
 		    }
@@ -40,11 +40,10 @@ int main() {
 	printf("\n");
     printf("The Strong numbers are:");
 	for(int i = a; i <= b ; i++){
-	    if (isStrong(i) == TRUE)
+	    if (isStrong(i) == 1)
 	    	{
 		    	printf(" %d", i);
 		    }
 	}
 	printf("\n");
-	return 0;
 }
